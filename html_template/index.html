@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Expense Tracker Application by LWS</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="./images/favicon.png" />
+    </head>
+    <body>
+        <div className="App">
+            <div className="header">
+                <h1>Expense Tracker</h1>
+            </div>
+
+            <div className="main">
+                <div className="container">
+                    <div className="top_card">
+                        <p>Your Current Balance</p>
+                        <h3>
+                            <span>৳</span>
+                            <span>10500</span>
+                        </h3>
+                    </div>
+
+                    <div className="form">
+                        <h3>Add new transaction</h3>
+
+                        <div className="form-group">
+                            <label for="transaction_name">Name</label>
+                            <input
+                                type="text"
+                                name="transaction_name"
+                                placeholder="My Salary"
+                            />
+                        </div>
+
+                        <div className="form-group radio">
+                            <label for="transaction_type">Type</label>
+                            <div className="radio_group">
+                                <input
+                                    type="radio"
+                                    value="income"
+                                    name="transaction_type"
+                                    checked
+                                />
+                                <label for="transaction_type">Income</label>
+                            </div>
+                            <div className="radio_group">
+                                <input
+                                    type="radio"
+                                    value="expense"
+                                    name="transaction_type"
+                                    placeholder="Expense"
+                                />
+                                <label for="transaction_type">Expense</label>
+                            </div>
+                        </div>
+
+                        <div className="form-group">
+                            <label for="transaction_amount">Amount</label>
+                            <input
+                                type="number"
+                                placeholder="300"
+                                name="transaction_amount"
+                            />
+                        </div>
+
+                        <button className="btn">Add Transaction</button>
+
+                        <button className="btn cancel_edit">Cancel Edit</button>
+                    </div>
+
+                    <p className="second_heading">Your Transactions:</p>
+
+                    <div className="conatiner_of_list_of_transactions">
+                        <ul>
+                            <li className="transaction income">
+                                <p>Earned this month</p>
+                                <div className="right">
+                                    <p>৳ 100</p>
+                                    <button className="link">
+                                        <img
+                                            className="icon"
+                                            src="./images/edit.svg"
+                                        />
+                                    </button>
+                                    <button className="link">
+                                        <img
+                                            className="icon"
+                                            src="./images/delete.svg"
+                                        />
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer">&copy;2022 Learn with Sumit</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "transactions": [
+    {
+      "name": "Salary From Website",
+      "amount": "100000",
+      "type": "income",
+      "id": 1
+    },
+    {
+      "name": "Family Expense",
+      "amount": "2543210",
+      "type": "expense",
+      "id": 2
+    },
+    {
+      "name": "Pendrive",
+      "amount": "2500",
+      "type": "expense",
+      "id": 4
+    },
+    {
+      "name": "Salary From Programming",
+      "type": "income",
+      "amount": 100000,
+      "id": 5
+    },
+    {
+      "name": "Bussiness",
+      "type": "income",
+      "amount": 1423658,
+      "id": 6
+    },
+    {
+      "name": "Tesla CyberTruck",
+      "amount": 12197698.74,
+      "type": "expense",
+      "id": 7
+    },
+    {
+      "name": "Launch Game",
+      "type": "income",
+      "amount": 20000000,
+      "id": 8
+    }
+  ]
+}
